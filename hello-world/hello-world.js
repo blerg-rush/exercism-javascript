@@ -1,3 +1,1 @@
-export const hello = () => {
-  throw new Error("Remove this statement and implement this function");
-};
+export const hello = () => 'Hello, World!';

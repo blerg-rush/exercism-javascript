@@ -1,7 +1,7 @@
 const dnaComplements = { 'G': 'C',
                          'C': 'G',
                          'T': 'A',
-                         'A': 'U'}
+                         'A': 'U' }
 
 export const toRna = (sequence) => {
   let rna = ''

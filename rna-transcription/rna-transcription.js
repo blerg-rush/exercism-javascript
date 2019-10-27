@@ -1,12 +1,10 @@
-const dnaComplements = { 'G': 'C',
-                         'C': 'G',
-                         'T': 'A',
-                         'A': 'U' }
+const DNA_COMPLEMENETS = { 'G': 'C',
+                           'C': 'G',
+                           'T': 'A',
+                           'A': 'U' }
 
 export const toRna = (sequence) => {
-  let rna = ''
-  for (let nucleotide of sequence) {
-    rna += dnaComplements[nucleotide]
-  }
-  return rna
+  return sequence.split('').map(nucleotide => {
+    return DNA_COMPLEMENETS[nucleotide]
+  }).join('')
 }

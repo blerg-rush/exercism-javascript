@@ -12,5 +12,5 @@ const timeInEarthYears = (seconds) => {
 }
 
 export const age = (planet, seconds) => {
-  return +(timeInEarthYears(seconds) * RELATIVE_ORBITAL_PERIODS[planet]).toFixed(2)
+  return +(timeInEarthYears(seconds) / RELATIVE_ORBITAL_PERIODS[planet]).toFixed(2)
 };
